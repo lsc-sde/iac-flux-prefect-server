@@ -2,7 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
   name: prefect
-  namespace: cluster-config
+  namespace: prefect
 spec:
   interval: 5m
   url: https://prefecthq.github.io/prefect-helm/
