@@ -6,7 +6,7 @@ metadata:
 spec:
   isCA: true
   commonName: prefect.privatelink.uksouth.azmk8s.io
-  secretName: prefect.privatelink.uksouth.azmk8s.io-ls
+  secretName: prefect.privatelink.uksouth.azmk8s.io-tls
   privateKey:
     algorithm: ECDSA
     size: 256
