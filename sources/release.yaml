@@ -22,7 +22,7 @@ spec:
       retries: -1
   values:
     server:
-      prefectApiUrl: http://prefect.privatelink.uksouth.azmk8s.io/api
+      prefectApiUrl: https://prefect.privatelink.uksouth.azmk8s.io/api
       image:
         prefectTag: 2.8.6-python3.11
       resources:
@@ -46,6 +46,7 @@ spec:
         hostname: "prefect.privatelink.uksouth.azmk8s.io"
         pathType: "Prefix"
         path: /
+      tls: true
       annotations:
         "nginx.ingress.kubernetes.io/ssl-redirect" : "true"
 
