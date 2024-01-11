@@ -40,7 +40,7 @@ spec:
       annotations:
         "service.beta.kubernetes.io/azure-load-balancer-internal" : "true"
     ingress:
-      enabled: false
+      enabled: true
       className: nginx
       host: 
         hostname: "prefect.privatelink.uksouth.azmk8s.io"
