@@ -17,6 +17,9 @@ spec:
   install:
     remediation:
       retries: -1
+  upgrade:
+    remediation:
+      retries: -1
   values:
     server:
       prefectApiUrl: http://prefect.privatelink.uksouth.azmk8s.io/api
