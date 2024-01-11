@@ -48,8 +48,8 @@ spec:
         path: /
       tls: true
       annotations:
-        "nginx.ingress.kubernetes.io/ssl-redirect" : "true"
-        "nginx.ingress.kubernetes.io/force-ssl-redirect" : "true"
+        nginx.ingress.kubernetes.io/ssl-redirect : "true"
+        nginx.ingress.kubernetes.io/force-ssl-redirect : "true"
     postgresql:
       enabled: true
       auth:
