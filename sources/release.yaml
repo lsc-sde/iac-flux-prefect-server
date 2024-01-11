@@ -44,7 +44,7 @@ spec:
         pathType: "Prefix"
         path: /
       annotations:
-        "nginx.ingress.kubernetes.io/ssl-redirect" : "false"
+        "nginx.ingress.kubernetes.io/ssl-redirect" : "true"
 
     postgresql:
       enabled: true
