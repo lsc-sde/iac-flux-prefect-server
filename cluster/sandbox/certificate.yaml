@@ -6,7 +6,7 @@ metadata:
 spec:
   isCA: true
   commonName: prefect.privatelink.uksouth.azmk8s.io
-  secretName: ingress-certificate
+  secretName: prefect.privatelink.uksouth.azmk8s.io-ls
   privateKey:
     algorithm: ECDSA
     size: 256
