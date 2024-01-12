@@ -4,3 +4,4 @@ namespace: prefect
 resources:
   - repository.yaml
   - release.yaml
+  - ingress.yaml
