@@ -1,12 +1,12 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: prefect.privatelink.uksouth.azmk8s.io-tls
+  name: sandbox-prefect.privatelink.uksouth.azmk8s.io-tls
   namespace: prefect
 spec:
   isCA: true
-  commonName: prefect.privatelink.uksouth.azmk8s.io
-  secretName: prefect.privatelink.uksouth.azmk8s.io-tls
+  commonName: sandbox-prefect.privatelink.uksouth.azmk8s.io
+  secretName: sandbox-prefect.privatelink.uksouth.azmk8s.io-tls
   privateKey:
     algorithm: ECDSA
     size: 256

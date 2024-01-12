@@ -20,9 +20,11 @@ spec:
   upgrade:
     remediation:
       retries: -1
+  valuesFrom:
+  - kind: ConfigMap
+    name: helmconfig
   values:
     server:
-      prefectApiUrl: https://prefect.privatelink.uksouth.azmk8s.io/api
       image:
         prefectTag: 2.8.6-python3.11
       resources:
@@ -43,7 +45,6 @@ spec:
       enabled: false
       className: nginx
       host: 
-        hostname: "prefect.privatelink.uksouth.azmk8s.io"
         pathType: "Prefix"
         path: /
       tls: true
