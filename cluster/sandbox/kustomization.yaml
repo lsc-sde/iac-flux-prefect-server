@@ -4,3 +4,4 @@ namespace: prefect
 resources:
   - certificate.yaml
   - config.yaml
+  - ingress.yaml
