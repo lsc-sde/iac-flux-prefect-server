@@ -12,10 +12,13 @@ spec:
   - host: prefect.privatelink.uksouth.azmk8s.io
     http:
       paths:
-      - path: /
+      - pathType: Prefix
+        path: "/"
         backend:
-          serviceName: prefect-server
-          servicePort: 4200
+          service:
+            name: prefect-server
+            port: 
+              number: 4200
   tls:
   - hosts:
     - prefect.privatelink.uksouth.azmk8s.io
