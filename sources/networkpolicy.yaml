@@ -5,7 +5,13 @@ metadata:
   namespace: prefect
 spec:
   ingress:
-  - {}
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          kubernetes.io/metadata.name: nginx
+    - podSelector:
+        matchLabels:
+          app.kubernetes.io/name: ingress-nginx
   podSelector: {}
   policyTypes:
   - Ingress
@@ -16,7 +22,7 @@ metadata:
   name: egress
   namespace: prefect
 spec:
-  ingress:
+  egress:
   - {}
   podSelector: {}
   policyTypes:
