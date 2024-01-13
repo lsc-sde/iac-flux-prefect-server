@@ -18,7 +18,7 @@ spec:
           service:
             name: prefect-server
             port: 
-              number: 4200
+              number: 443
   tls:
   - hosts:
     - sandbox-prefect.privatelink.uksouth.azmk8s.io

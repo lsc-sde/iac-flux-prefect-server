@@ -35,12 +35,12 @@ spec:
           cpu: 1000m
           memory: 2Gi
     service:
-      type: "NodePort"
-      port: 4200
+      type: "LoadBalancer"
+      port: 443
       targetPort: 4200
-      #externalTrafficPolicy: "Cluster"
-      #annotations:
-      #  "service.beta.kubernetes.io/azure-load-balancer-internal" : "true"
+      externalTrafficPolicy: "local"
+      annotations:
+        "service.beta.kubernetes.io/azure-load-balancer-internal" : "true"
     ingress:
       enabled: false
       className: nginx
