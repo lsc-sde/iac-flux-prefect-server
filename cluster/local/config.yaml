@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: helmconfig
+  namespace: prefect
+data:
+  values.yaml: |
+    server:
+      prefectApiUrl: https://local-prefect.privatelink.uksouth.azmk8s.io/api
+    ingress:
+      host:
+        hostname: local-prefect.privatelink.uksouth.azmk8s.io
