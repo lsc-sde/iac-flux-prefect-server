@@ -30,7 +30,7 @@ jobs:
     - sandbox
     with:
       symver: ${{ needs.semver.outputs.GitVersion_SemVer }}
-      directory: iac/flux/ohdsi
+      directory: iac/flux/prefect-server
     secrets: inherit
 
   dev:
